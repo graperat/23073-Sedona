@@ -1,7 +1,7 @@
 # Проект «Sedona»
 
 * Студент: [graperat Русинова](https://htmlacademy.ru/profile/id23073).
-* Наставник: `Unknown`.
+* Наставник: [Сергей Попов](https://htmlacademy.ru/profile/id42761).
 
 --
 
