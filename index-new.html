@@ -2,100 +2,96 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>Sedona: index</title>
- <link rel="stylesheet" href="css/style.css">
+	<meta charset="utf-8">
+	<title>Sedona: index</title>
+ 	<link rel="stylesheet/less" type="text/css" href="less/style.less" >
+ 	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<script src="js/less.min.js" type="text/javascript"></script>
 </head>
 
 <body>
 		<header class="main-header">
-			<nav class="main-header__main-menu">
-				<ul class="main-menu__list">
-					<li class="main-menu__active-item"><a href="#">Карта штата</a></li>
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Фото и видео</a></li>
-					<li><a href="#">Гостиницы</a></li>
-				</ul>
-				<button class="main-menu__close"></button>
-				<button class="main-menu__toogle"></button>
-			</nav>
-			<div class="main-header__logo">
+			<div class="main-header__nav-wrap">
+				<nav class="main-menu">
+					<ul class="main-menu__list">
+						<li class="main-menu__item main-menu__item--active"><a href="#">Карта штата</a></li>
+						<li class="main-menu__item"><a href="#">Информация</a></li>
+						<li class="main-menu__item"><a href="#">Фото и видео</a></li>
+						<li class="main-menu__item"><a href="#">Гостиницы</a></li>
+					</ul>
+					<button class="btn btn--menu-close"></button>
+					<button class="btn btn--menu-toggle"></button>
+				</nav>
+			</div>
+			<div class="main-header__logo-wrap">
 				<a class="main-header__logo-link" href="#">
 					<img src="img/logo.png">
 				</a>
 			</div>
 		</header>
+		
 		<div class="promo-image">
 			<img src="" alt="promo-image">
 		</div>
 		<div class="promo-text">
-			<h1 class="promo-text__header">Седона - небольшой городок в Аризоне, который заслуживает большего!</h1>
+			<h1 class="promo-text__title">Седона - небольшой городок в Аризоне, который заслуживает большего!</h1>
 			<p class="promo-text__text">Рассмотрим 5 причин, по которым Седону круче, чем Гранд-каньон</p>
 		</div>
-		<div class="description-col">
-			<section class="description-col__text">
-				<h3 class="description-col__header">Седонга-настоящий городок</h3>
+		<section class="description">
+			<section class="col col--description">
+				<h3 class="col__title col__title--description">Седона-настоящий городок</h3>
 				<p>&mdash;&ensp;№1&ensp;&mdash;</p>
-				<p>Седона не аттракцион для туристов, там живут насоящие люди</p>
+				<p>Седона не аттракцион для туристов, там живут настоящие люди</p>
 			</section>
-			<div class="description-col__image">
+			<div class="description-image">
 				<img src="" alt="image">
 			</div>
-		</div>
+		</section>
 		<section class="col-wrap">
-			<section class="col">
-				<div class="col__image-col"></div>
-				<div class="col__text-col">
-					<h3 class="text-col__header">Жилье</h3>
-					<p class="text-col__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-				</div>
+			<section class="col col--image-icon">
+				<h3 class="col__title">Жилье</h3>
+				<p class="col__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 			</section>
-			<section class="col">
-				<div class="col__image-col"></div>
-				<div class="col__text-col">
-					<h3 class="text-col__header">Сувениры</h3>
-					<p class="text-col__text">Не только китайского, но и местного производства!</p>
-				</div>
+			<section class="col col--image-icon">
+				<h3 class="col__title">Сувениры</h3>
+				<p class="col__text">Не только китайского, но и местного производства!</p>
 			</section>
-			<section class="col">
-				<div class="col__image-col"></div>
-				<div class="col__text-col">
-					<h3 class="text-col__header">Еда</h3>
-					<p class="text-col__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-				</div>
+			<section class="col col--image-icon">
+				<h3 class="col__title">Еда</h3>
+				<p class="col__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 			</section>
 		</section>
-		<div class="description-col">
-			<section class="description-col__text">
-				<h3 class="description-col__header">Там есть мост дьявола</h3>
+		<section class="description">
+			<section class="col col--description">
+				<h3 class="col__title col__title--description">Там есть мост дьявола</h3>
 				<p>&mdash;&ensp;№2&ensp;&mdash;</p>
 				<p>Да, по нему можно пойти! Если конечно вы осмелитесь</p>
 			</section>
-			<div class="description-col__image">
+			<div class="description-image">
 				<img src="" alt="image">
 			</div>
-		</div>
+		</section>
 		<section class="col-wrap">
-			<section class="gray-col">
-				<h3 class="gray-col__header">Небольшая площадь</h3>
-				<p class="gray-col__text">&mdash;&ensp;№3&ensp;&mdash;</p>
-				<p class="gray-col__text">Все достопримечательности находятся очень близко</p>
+			<section class="col col--gray">
+				<h3 class="col__title col__title--gray">Небольшая площадь</h3>
+				<p>&mdash;&ensp;№3&ensp;&mdash;</p>
+				<p>Все достопримечательности находятся очень близко</p>
 			</section>
-			<section class="gray-col">
-				<h3 class="gray-col__header">Красивая дорога</h3>
-				<p class="gray-col__text">&mdash;&ensp;№4&ensp;&mdash;</p>
-				<p class="gray-col__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+			<section class="col col--gray">
+				<h3 class="col__title col__title--gray">Красивая дорога</h3>
+				<p>&mdash;&ensp;№4&ensp;&mdash;</p>
+				<p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
 			</section>
-			<section class="gray-col">
-				<h3 class="gray-col__header">Мало туристов</h3>
-				<p class="gray-col__text">&mdash;&ensp;№5&ensp;&mdash;</p>
-				<p class="gray-col__text">Большинство едет в Гранд-Каньон и толпится там</p>
+			<section class="col col--gray">
+				<h3 class="col__title col__title--gray">Мало туристов</h3>
+				<p>&mdash;&ensp;№5&ensp;&mdash;</p>
+				<p>Большинство едет в Гранд-Каньон и толпится там</p>
 			</section>
 		</section>
 		<section class="search">
-			<h2 class="search__header">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+			<h2 class="search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
 			<p class="search__text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ И МЫ ПОКАЖЕМ ВАС ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-			<button class="search__search-button"><h2>поиск гостиницы в седоне</h2></button>
+			<button class="search__search-button">поиск гостиницы в седоне</button>
 			<form class="search__form">
 				<label class="form__search-field" for="date-in">Дата заезда:</label><input id="date-in" type="date" class="search-field">
 				<label class="form__search-field" for="date-out">Дата выезда:</label><input id="date-out" type="date" class="search-field">
@@ -104,22 +100,25 @@
 				<button class="search-form-button">Найти</button>
 			</form>
 		</section>
-		<footer class="main-footer">
-			<div class="main-foote__hashtag">
-				<a href="#">#visitSEDONA</a>
-			</div>
-			<div class="main-footer__social-links">
-				<a class="social-links__sprite-footer tw" href="#"></a>
-				<a class="social-links__sprite-footer fb" href="#"></a>
-				<a class="social-links__sprite-footer play" href="#"></a>
-			</div>
-			<div class="main-footer__designer">
-				<p class="designer__description">Website by</p>
-				<a class="designer__sprite-footer academy" href="#"></a>
-				<p class="designer__description">For</p>
-				<a class="designer__sprite-footer logo-academy" href="#"></a>
-			</div>
-		</footer>
+		
+		<section class="map">
+			<footer class="main-footer">
+				<div class="main-footer__hashtag">
+					<a href="#">#visitSEDONA</a>
+				</div>
+				<div class="social-links">
+					<a class="social-links__item social-links__item--twitter" href="#"></a>
+					<a class="social-links__item social-links__item--facebook" href="#"></a>
+					<a class="social-links__item social-links__item--play" href="#"></a>
+				</div>
+				<div class="designer">
+					<p class="designer__description">Website by</p>
+					<a class="designer__academy" href="#"></a>
+					<p class="designer__description">For</p>
+					<a class="designer__logo-academy" href="#"></a>
+				</div>
+			</footer>
+		</section>
     
   <!-- <script src="js/script.js"></script> -->
 
