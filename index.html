@@ -1,17 +1,119 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
 
 <head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Sedona</title>
-  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <meta charset='utf-8'>
+  <title>Sedona: index</title>
+ <link rel='stylesheet' href='css/style.css'>
 </head>
 
 <body>
-
-  <p>Репозиторий создан для обучения на продвинутом онлайн-интенсиве «<a href="https://htmlacademy.ru/advanced_intensive">Создание веб-интерфейсов с помощью HTML и CSS</a>».</p>
-
-  <!-- <script src="js/script.js"></script> -->
+	<div class='center-wrapper'>
+		<header class='main-header'>
+			<nav class='main-menu'>
+				<ul>
+					<li><a href='#'>Карта штата</a></li>
+					<li><a href='#'>Информация</a></li>
+					<li><a href='#'>Фото и видео</a></li>
+					<li><a href='#'>Гостиницы</a></li>
+				</ul>
+				<button class='close'></button>
+			</nav>
+			<figure class='logo'>
+				<a href='#'><img src='img/logo.png'></a>
+			</figure>
+			<button class='main-menu'></button>
+		</header>
+		<div class='promo-image'>
+			<img src='' alt='promo-image'>
+		</div>
+		<div class='promo-text'>
+			<h1>Седона - небольшой городок в Аризоне, который заслуживает большего!</h1>
+			<p>Рассмотрим 5 причин, по которым Седону круче, чем Гранд-каньон</p>
+		</div>
+		<section class='col  description'>
+			<h3>Настоящий городок</h3>
+			<p>&mdash;&ensp;№1&ensp;&mdash;</p>
+			<p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+		</section>
+		<div class='col-description-image'>
+			<img src='' alt='image'>
+		</div>
+		<section class='col'>
+			<div class='col-image'></div>
+			<div class='col-text'>
+				<h3>Жилье</h3>
+				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+			</div>
+		</section>
+		<section class='col'>
+			<div class='col-image'></div>
+			<div class='col-text'>
+				<h3>Сувениры</h3>
+				<p>Не только китайского, но и местного производства!</p>
+			</div>
+		</section>
+		<section class='col'>
+			<div class='col-image'></div>
+			<div class='col-text'>
+				<h3>Еда</h3>
+				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+			</div>
+		</section>
+		<section class='col  description'>
+			<h3>Там есть мост дьявола</h3>
+			<p>&mdash;&ensp;№2&ensp;&mdash;</p>
+			<p>Да, по нему можно пойти! Если конечно вы осмелитесь</p>
+		</section>
+		<div class='col-description-image'>
+			<img src='' alt='image'>
+		</div>
+		<section class='col  col-gray'>
+			<h3>Небольшая площадь</h3>
+			<p>&mdash;&ensp;№3&ensp;&mdash;</p>
+			<p>Все достопримечательности находятся очень близко</p>
+		</section>
+		<section class='col  col-gray'>
+			<h3>Красивая дорога</h3>
+			<p>&mdash;&ensp;№4&ensp;&mdash;</p>
+			<p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+		</section>
+		<section class='col  col-gray'>
+			<h3>Мало туристов</h3>
+			<p>&mdash;&ensp;№5&ensp;&mdash;</p>
+			<p>Большинство едет в Гранд-Каньон и толпится там</p>
+		</section>
+		<section class='search'>
+			<h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+			<p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ И МЫ ПОКАЖЕМ ВАС ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+			<button class='search-button-hotel'><h2>поиск гостиницы в седоне</h2></button>
+			<form class="search-form">
+				<label class='search-field' for='date-in'>Дата заезда:</label><input id='date-in' type='date' class='search-field'>
+				<label class='search-field' for='date-out'>Дата выезда:</label><input id='date-out' type='date' class='search-field'>
+				<label class='search-field  search-field-small' for='grownup'>Взрослые:</label><button class="minus">-</button><input id='grownup' type='text' class='search-field  search-field-small' value='2'><button class="minus">+</button>
+				<label class='search-field  search-field-small' for='children'>Дети:</label><button class="minus">-</button><input id='grownup' type='text' class='search-field  search-field-small' value='0'><button class="children">+</button>
+				<button class="search-form-button">Найти</button>
+			</form>
+		</section>
+		<section class="map">
+			<footer>
+				<div class="hashtag"><a href='#'>#visitSEDONA</a></div>
+				<div class="social-links">
+					<a class="sprite-footer tw" href="#"></a>
+					<a class="sprite-footer fb" href="#"></a>
+					<a class="sprite-footer play" href="#"></a>
+				</div>
+				<div class="designer">
+					<p>Website by</p>
+					<a class='sprite-footer academy' href="#"></a>
+					<p>For</p>
+					<a class='sprite-footer logo-academy' href="#"></a>
+				</div>
+			</footer>
+		</section>
+	</div>
+    
+  <!-- <script src='js/script.js'></script> -->
 
 </body>
 </html>
