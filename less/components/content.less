@@ -1,0 +1,32 @@
+.col {
+	width: 100%;
+	margin: 0;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 11% 6%;
+	box-sizing: border-box;
+	&--description {
+		background: #81B3D2;
+		color: white;
+	}
+	&--gray {
+		background: #EEEEEE;
+	}
+	&__text--number {
+		padding-bottom: 27px;
+	}
+	&--image-icon {
+		text-align: left;
+		padding-left: 22%;
+		&:first-child {
+			background: url(../img/house.png) no-repeat 0 30%; 
+		}
+		&:nth-child(2){
+			background: url(../img/box.png) no-repeat 0 30%;
+		}
+		&:last-child {
+			background: url(../img/burger.png) no-repeat 0 30%; 
+		}
+	}
+}

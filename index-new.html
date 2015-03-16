@@ -10,115 +10,131 @@
 </head>
 
 <body>
-		<header class="main-header">
-			<div class="main-header__nav-wrap">
+		<div class='container-center'>
+			<header class="main-header">
 				<nav class="main-menu">
 					<ul class="main-menu__list">
-						<li class="main-menu__item main-menu__item--active"><a href="#">Карта штата</a></li>
-						<li class="main-menu__item"><a href="#">Информация</a></li>
-						<li class="main-menu__item"><a href="#">Фото и видео</a></li>
-						<li class="main-menu__item"><a href="#">Гостиницы</a></li>
+						<li class="main-menu__item main-menu__item--active">
+							<a href="#">Карта штата</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="#">Информация</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="#">Фото и видео</a>
+						</li>
+						<li class="main-menu__item">
+							<a href="#">Гостиницы</a>
+						</li>
 					</ul>
-					<button class="btn btn--menu-close"></button>
-					<button class="btn btn--menu-toggle"></button>
+					<input type="image" class="btn btn--menu-close" src='img/close.png' alt="Закрыть">
+					<input type="image" class="btn btn--menu-toggle" src='img/gamburger.png' alt="Открыть меню">
 				</nav>
-			</div>
-			<div class="main-header__logo-wrap">
-				<a class="main-header__logo-link" href="#">
-					<img src="img/logo.png">
-				</a>
-			</div>
-		</header>
-		
-		<div class="promo-image">
-			<img src="" alt="promo-image">
-		</div>
-		<div class="promo-text">
-			<h1 class="promo-text__title">Седона - небольшой городок в Аризоне, который заслуживает большего!</h1>
-			<p class="promo-text__text">Рассмотрим 5 причин, по которым Седону круче, чем Гранд-каньон</p>
-		</div>
-		<section class="description">
-			<section class="col col--description">
-				<h3 class="col__title col__title--description">Седона-настоящий городок</h3>
-				<p>&mdash;&ensp;№1&ensp;&mdash;</p>
-				<p>Седона не аттракцион для туристов, там живут настоящие люди</p>
-			</section>
-			<div class="description-image">
-				<img src="" alt="image">
-			</div>
-		</section>
-		<section class="col-wrap">
-			<section class="col col--image-icon">
-				<h3 class="col__title">Жилье</h3>
-				<p class="col__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-			</section>
-			<section class="col col--image-icon">
-				<h3 class="col__title">Сувениры</h3>
-				<p class="col__text">Не только китайского, но и местного производства!</p>
-			</section>
-			<section class="col col--image-icon">
-				<h3 class="col__title">Еда</h3>
-				<p class="col__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-			</section>
-		</section>
-		<section class="description">
-			<section class="col col--description">
-				<h3 class="col__title col__title--description">Там есть мост дьявола</h3>
-				<p>&mdash;&ensp;№2&ensp;&mdash;</p>
-				<p>Да, по нему можно пойти! Если конечно вы осмелитесь</p>
-			</section>
-			<div class="description-image">
-				<img src="" alt="image">
-			</div>
-		</section>
-		<section class="col-wrap">
-			<section class="col col--gray">
-				<h3 class="col__title col__title--gray">Небольшая площадь</h3>
-				<p>&mdash;&ensp;№3&ensp;&mdash;</p>
-				<p>Все достопримечательности находятся очень близко</p>
-			</section>
-			<section class="col col--gray">
-				<h3 class="col__title col__title--gray">Красивая дорога</h3>
-				<p>&mdash;&ensp;№4&ensp;&mdash;</p>
-				<p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
-			</section>
-			<section class="col col--gray">
-				<h3 class="col__title col__title--gray">Мало туристов</h3>
-				<p>&mdash;&ensp;№5&ensp;&mdash;</p>
-				<p>Большинство едет в Гранд-Каньон и толпится там</p>
-			</section>
-		</section>
-		<section class="search">
-			<h2 class="search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-			<p class="search__text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ И МЫ ПОКАЖЕМ ВАС ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-			<button class="search__search-button">поиск гостиницы в седоне</button>
-			<form class="search__form">
-				<label class="form__search-field" for="date-in">Дата заезда:</label><input id="date-in" type="date" class="search-field">
-				<label class="form__search-field" for="date-out">Дата выезда:</label><input id="date-out" type="date" class="search-field">
-				<label class="form__search-field  form__search-field-small" for="grownup">Взрослые:</label><button class="minus">-</button><input id="grownup" type="text" class="form__search-field   form__search-field-small" value="2"><button class="minus">+</button>
-				<label class="form__search-field  form__search-field-small" for="children">Дети:</label><button class="minus">-</button><input id="grownup" type="text" class="form__search-field  form__search-field-small" value="0"><button class="children">+</button>
-				<button class="search-form-button">Найти</button>
-			</form>
-		</section>
-		
-		<section class="map">
-			<footer class="main-footer">
-				<div class="main-footer__hashtag">
-					<a href="#">#visitSEDONA</a>
+				<div class="main-header__logo-wrap">
+					<a class="main-header__logo-link" href="#">
+						<img src="img/logo.png">
+					</a>
 				</div>
-				<div class="social-links">
-					<a class="social-links__item social-links__item--twitter" href="#"></a>
-					<a class="social-links__item social-links__item--facebook" href="#"></a>
-					<a class="social-links__item social-links__item--play" href="#"></a>
+			</header>
+
+			<div class="promo-image">
+				<img src="img/intro-text.png" alt="promo-image">
+			</div>
+			<div class="promo-text">
+				<h1 class="promo-text__title">Седона - небольшой городок в Аризоне, который заслуживает большего!</h1>
+				<p class="promo-text__text">Рассмотрим 5 причин, по которым Седону круче, чем Гранд-каньон</p>
+			</div>
+			<section class="description">
+				<div class="col col--description">
+					<h3 class="col__title col__title--description">Настоящий городок</h3>
+					<p class="col__text col__text--number">&mdash;&ensp;№1&ensp;&mdash;</p>
+					<p class="col__text">Седона не аттракцион для туристов, там живут настоящие люди</p>
 				</div>
-				<div class="designer">
-					<p class="designer__description">Website by</p>
-					<a class="designer__academy" href="#"></a>
-					<p class="designer__description">For</p>
-					<a class="designer__logo-academy" href="#"></a>
+				<div class="description--image">
+					<img src="img/description-image-1.jpg" alt="image">
 				</div>
-			</footer>
-		</section>
+			</section>
+			<section class="col-wrap">
+				<section class="col col--image-icon">
+					<h3 class="col__title">Жилье</h3>
+					<p class="col__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				</section>
+				<section class="col col--image-icon">
+					<h3 class="col__title">Сувениры</h3>
+					<p class="col__text">Не только китайского, но и местного производства!</p>
+				</section>
+				<section class="col col--image-icon">
+					<h3 class="col__title">Еда</h3>
+					<p class="col__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				</section>
+			</section>
+			<section class="description">
+				<div class="col col--description">
+					<h3 class="col__title col__title--description">Там есть мост дьявола</h3>
+					<p class="col__text col__text--number">&mdash;&ensp;№2&ensp;&mdash;</p>
+					<p>Да, по нему можно пойти! Если конечно вы осмелитесь</p>
+				</div>
+				<div class="description--image">
+					<img src="img/description-image-2.jpg" alt="image">
+				</div>
+			</section>
+			<section class="col-wrap">
+				<section class="col col--gray">
+					<h3 class="col__title col__title--gray">Небольшая площадь</h3>
+					<p class="col__text col__text--number">&mdash;&ensp;№3&ensp;&mdash;</p>
+					<p class="col__text">Все достопримечательности находятся очень близко</p>
+				</section>
+				<section class="col col--gray">
+					<h3 class="col__title col__title--gray">Красивая дорога</h3>
+					<p class="col__text col__text--number">&mdash;&ensp;№4&ensp;&mdash;</p>
+					<p class="col__text">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+				</section>
+				<section class="col col--gray">
+					<h3 class="col__title col__title--gray">Мало туристов</h3>
+					<p class="col__text col__text--number">&mdash;&ensp;№5&ensp;&mdash;</p>
+					<p class="col__text">Большинство едет в Гранд-Каньон и толпится там</p>
+				</section>
+			</section>
+			<section class="search">
+				<div class='search__text-block'>
+					<h2 class="search__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+					<p class="search__text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ И МЫ ПОКАЖЕМ ВАС ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+				</div>
+				<button class="search__search-button">поиск гостиницы в седоне</button>
+				<form class="search__form">
+					<label class="form__search-field" for="date-in">Дата заезда:</label><input id="date-in" type="date" class="search-field">
+					<label class="form__search-field" for="date-out">Дата выезда:</label><input id="date-out" type="date" class="search-field">
+					<label class="form__search-field  form__search-field-small" for="grownup">Взрослые:</label><button class="minus">-</button><input id="grownup" type="text" class="form__search-field   form__search-field-small" value="2"><button class="minus">+</button>
+					<label class="form__search-field  form__search-field-small" for="children">Дети:</label><button class="minus">-</button><input id="grownup" type="text" class="form__search-field  form__search-field-small" value="0"><button class="children">+</button>
+					<button class="search-form-button">Найти</button>
+				</form>
+			</section>
+
+			<section class="map">
+				<footer class="main-footer">
+					<div class="main-footer__hashtag">
+						<a href="#">#visitSEDONA</a>
+					</div>
+					<div class="social-links">
+						<a class="social-links__item social-links__item--twitter" href="#"></a>
+						<a class="social-links__item social-links__item--facebook" href="#"></a>
+						<a class="social-links__item social-links__item--play" href="#"></a>
+					</div>
+					<div class="designer">
+						<p class="designer__description">
+							Website by
+							<a class="designer__academy" href="#">
+								<img src='img/academy.png'>
+							</a>
+							For
+							<a class="designer__logo-academy" href="#">
+								<img src='img/academy-logo.png'>
+							</a>
+						</p>
+					</div>
+				</footer>
+			</section>
+	</div>
     
   <!-- <script src="js/script.js"></script> -->
 
