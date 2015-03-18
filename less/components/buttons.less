@@ -1,3 +1,6 @@
+button {
+	border: none;
+}
 .btn {
 	position: absolute;
 	&--menu-close {
@@ -5,14 +8,28 @@
 		top: 17px
 	}
 	&--menu-toggle {
-		bottom: -39px;
+		bottom: 15px;
 		right: 20px;
 	}
 }
 .search__search-button {
+	text-align: center;
 	width: 320px;
 	background: #766357;
-	font-size: @font-medium;
+	.font-md;
 	color: white;
 	padding: 30px 0;
+	text-transform: uppercase;
+}
+@media(min-width: 460px) {
+	.btn {
+		display: none;
+	}
+	.search__search-button {
+		.font-lg;
+	}
+	.search__search-button {
+		width: 565px;
+		.font-lg;
+	}
 }
