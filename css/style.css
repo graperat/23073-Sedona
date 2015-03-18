@@ -451,6 +451,12 @@ th {
     width: 20%;
     border: none;
   }
+  .main-menu__item:hover {
+    background: none;
+  }
+  .main-menu__item:active {
+    background: none;
+  }
   .main-menu__item--logo {
     order: 3;
     background: none;
@@ -461,6 +467,7 @@ th {
   }
   .main-menu__item:nth-child(5) {
     order: 5;
+    box-shadow: none;
   }
   .main-menu__item a {
     background: none;
