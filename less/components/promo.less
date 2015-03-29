@@ -1,11 +1,32 @@
 .promo-image {
+	padding: 48px 0;
+	box-sizing: border-box;
 	background-attachment: fixed;
-	text-align: center;
-	img {
-		width: 100%;
-		z-index: 0;
+	height: 390px;
+	background-image: url('../img/photo-background@2x.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 20%;
+	background-size: cover;
+	.center;
+	svg {
+		display: block;
+		margin: auto;	
 	}
-	
+	&__welcome {
+		fill: @blue;
+		padding-bottom: 12px;
+	}
+	&__gorgeous {
+		fill: @brown;
+		padding-bottom: 64px;
+	}
+	&__sedona {
+		fill: @white;
+		padding-bottom: 64px;
+	}
+	&__because {
+		fill: @white;
+	}
 }
 .promo-text {
 	padding: 44px 6%;
@@ -13,8 +34,35 @@
 	position: relative;
 }
 
-@media(min-width: 460px) {
-	.promo-text__title {
-		white-space: pre-line;
+@media(min-width: 565px) {
+	.promo-image {
+		height: 507px;
+		padding: 77px 0;
+		&::after {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			content: '';
+			background: url('../img/promo-decorate-white.png') no-repeat bottom;
+			bottom: 0;
+			right: 0;
+		}
+		svg {
+			transform: scale(1.6);
+		}
+		&__welcome {
+			padding-bottom: 40px;
+		}
+		&__gorgeous {
+			padding-bottom: 83px;
+		}
+		&__sedona {
+			padding-bottom: 83px;
+		}
+	}
+	.promo-text {
+		&__title {
+			white-space: pre-line;
+		}
 	}
 }

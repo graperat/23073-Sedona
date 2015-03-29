@@ -1,6 +1,8 @@
 .main-header {
-	text-align: center;
-	
+	text-align: center;	
+}
+.close-menu {
+	display: none;
 }
 .main-menu {
 	position: relative;
@@ -38,6 +40,9 @@
 			background: none;
 			margin-bottom: -40px;
 			border: 0;
+			&:hover {
+				background: none;
+			}
 		}
 		a {
 			line-height: 53px;
@@ -50,14 +55,14 @@
 		}
 	}
 }
-@media(min-width: 460px){
+@media(min-width: 565px){
 	.main-menu {
 	&__list {
 		flex-direction: row;
 		justify-content: space-between;
 	}
 	&__item {
-		background: white;
+		background: none;
 		.font-normal;
 		width: 20%;
 		border: none;
