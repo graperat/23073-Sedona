@@ -67,9 +67,10 @@
 		width: 33.3%;
 		padding: 50px 6%;
 		.icon {
+			width: 70px;
+			height: 70px;
 			position: relative;
 			left: 0;
-			padding-top: 30px;
 			padding-bottom: 45px;
 		}
 		&--align {
@@ -77,10 +78,10 @@
 			padding-left: 0;
 		}
 		&--image-icon {
-			height: 330px;
+			min-height: 330px;
 		}
 		&--gray {
-			height: 256px;
+			min-height: 256px;
 			&:nth-child(2n) {
 				border: none;
 			}
@@ -91,9 +92,11 @@
 			height: 100%;
 		}
 		&__title {
-			padding-left: 9%;
-			padding-right: 9%;
-			white-space: pre-line;
+			&--gray {
+				padding-left: 20%;
+				padding-right: 20%;
+				min-height: 60px;
+			}
 		}
 		&__text {
 			-moz-hyphens: auto;

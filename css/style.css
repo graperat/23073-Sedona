@@ -381,6 +381,7 @@ th {
   text-align: left;
 }
 .container-center {
+  min-width: 320px;
   margin: auto;
   box-shadow: 0 0 20px 0 #808080;
 }
@@ -434,6 +435,7 @@ th {
   color: rgba(255, 255, 255, 0.3);
 }
 .main-menu__item--logo {
+  z-index: 200;
   order: 5;
   background: none;
   margin-bottom: -40px;
@@ -502,6 +504,7 @@ th {
   }
 }
 .promo-image {
+  position: relative;
   padding: 48px 0;
   box-sizing: border-box;
   background-attachment: fixed;
@@ -511,6 +514,16 @@ th {
   background-position: 50% 20%;
   background-size: cover;
   text-align: center;
+}
+.promo-image::after {
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: url('../img/promo-decorate-top.png') no-repeat bottom;
+  position: absolute;
+  background-size: 100% 27px;
+  bottom: -1px;
+  right: 0;
 }
 .promo-image svg {
   display: block;
@@ -536,6 +549,16 @@ th {
   text-align: center;
   position: relative;
 }
+.promo-text::after {
+  content: '';
+  background: url('../img/promo-decorate-bottom.png') no-repeat bottom;
+  background-size: 100% 27px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+}
 @media (min-width: 565px) {
   .promo-image {
     height: 507px;
@@ -547,6 +570,7 @@ th {
     position: absolute;
     content: '';
     background: url('../img/promo-decorate-white.png') no-repeat bottom;
+    background-size: 100% 57px;
     bottom: 0;
     right: 0;
   }
@@ -561,6 +585,9 @@ th {
   }
   .promo-image__sedona {
     padding-bottom: 83px;
+  }
+  .promo-text::after {
+    background: none;
   }
   .promo-text__title {
     white-space: pre-line;
@@ -581,11 +608,19 @@ th {
   position: absolute;
 }
 .map {
-  background: url('../img/map.jpg') no-repeat center;
-  background-size: cover;
   position: relative;
   height: 594px;
   text-align: center;
+}
+.map-interactive {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.map-interactive iframe {
+  width: 100%;
+  height: 100%;
 }
 .main-footer {
   box-sizing: border-box;
@@ -759,9 +794,10 @@ button {
     padding: 50px 6%;
   }
   .col .icon {
+    width: 70px;
+    height: 70px;
     position: relative;
     left: 0;
-    padding-top: 30px;
     padding-bottom: 45px;
   }
   .col--align {
@@ -769,10 +805,10 @@ button {
     padding-left: 0;
   }
   .col--image-icon {
-    height: 330px;
+    min-height: 330px;
   }
   .col--gray {
-    height: 256px;
+    min-height: 256px;
   }
   .col--gray:nth-child(2n) {
     border: none;
@@ -782,10 +818,10 @@ button {
     padding-top: 0;
     height: 100%;
   }
-  .col__title {
-    padding-left: 9%;
-    padding-right: 9%;
-    white-space: pre-line;
+  .col__title--gray {
+    padding-left: 20%;
+    padding-right: 20%;
+    min-height: 60px;
   }
   .col__text {
     -moz-hyphens: auto;
